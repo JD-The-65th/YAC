@@ -282,11 +282,8 @@ def ImportData():
   print(f"{S} entries removed for having reserve times later than the earliest one next quarter\n")
   """
   print(f"DONE, dataset at {len(data)} entries")
+  
   data.to_csv(f"filteredstuff.csv", index=False)
-  with open("filteredstuff.csv", "r") as f:
-    lines = f.readlines()
-  with open("filteredstuff.csv", "w") as f:
-    f.writelines(lines[1:])
 
   print(f"Wrote cleaned data to filteredstuff.csv")
 

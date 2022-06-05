@@ -24,7 +24,7 @@ int main()
 
         // Data set
 
-        DataSet data_set("../data/iris_plant_original.csv", ';', true);
+        DataSet data_set("filteredstuff.csv", ';', true);
 
         const Index input_variables_number = data_set.get_input_variables_number();
         const Index target_variables_number = data_set.get_target_variables_number();
@@ -41,20 +41,6 @@ int main()
 
         training_strategy.set_loss_method(TrainingStrategy::LossMethod::CROSS_ENTROPY_ERROR);
         training_strategy.perform_training();
-
-        // Testing analysis
-
-        const TestingAnalysis testing_analysis(&neural_network, &data_set);
-
-        Tensor<type, 2> inputs(3, 4);
-
-        inputs.setValues({{type(5.1),type(3.5),type(1.4),type(0.2)},
-                          {type(6.4),type(3.2),type(4.5),type(1.5)},
-                          {type(6.3),type(2.7),type(4.9),type(1.8)}});
-
-        const Tensor<Index, 2> confusion = testing_analysis.calculate_confusion();
-
-        cout << "\nConfusion matrix:\n" << confusion << endl;
 
         // Save results
 
