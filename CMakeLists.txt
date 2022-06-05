@@ -5,7 +5,7 @@ include(CTest)
 enable_testing()
 
 
-add_executable(DummyVR 
+add_executable(YAC
 src/main.cpp
 )
 include_directories("include/")

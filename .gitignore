@@ -7,6 +7,13 @@
 *.o
 *.obj
 
+# Build Stuff
+CMakeFiles/
+*.cmake 
+*.tcl
+Makefile
+CMakeCache.txt
+
 # Precompiled Headers
 *.gch
 *.pch
