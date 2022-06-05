@@ -8,7 +8,8 @@ enable_testing()
 add_executable(YAC
 src/main.cpp
 )
-include_directories("include/")
+include_directories("include/" 
+"opennn/")
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
