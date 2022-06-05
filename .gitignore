@@ -14,6 +14,8 @@ build/
 *.tcl
 Makefile
 CMakeCache.txt
+tq?tqx=out:csv
+filteredstuff.csv
 
 # Precompiled Headers
 *.gch
