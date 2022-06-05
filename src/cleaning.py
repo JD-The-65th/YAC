@@ -1,3 +1,5 @@
+# Shamelessly yeeted from here https://colab.research.google.com/drive/1TzC_cQIIhplKAd1ceHxABS9FFtFaoyMt 
+# And modified to fit my needs
 import numpy as np
 import pandas as pd
 import math
